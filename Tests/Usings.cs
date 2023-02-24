@@ -1,1 +1,10 @@
 global using Xunit;
+global using API.Common;
+global using API.DTOs;
+global using API.Extensions;
+global using API.Interfaces;
+global using API.Persistence.Entities;
+global using API.Services;
+global using AutoMapper;
+global using Microsoft.Extensions.Logging;
+global using Moq;
