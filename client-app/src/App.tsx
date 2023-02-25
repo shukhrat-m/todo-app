@@ -8,18 +8,16 @@ import TaskList from './components/TaskList/TaskList';
 
 const App = () => {
   return (
-      <div className="App">
-          <BrowserRouter>
-              <Container>
-                  <NavBar />
-                  <Routes>
-                      <Route path="/" index element={<TaskList />} />
-                      <Route path="/create" element={<TaskCreateOrEdit isUpdate={false} />} />
-                      <Route path="/update/:id" element={<TaskCreateOrEdit isUpdate={true} />} />
-                      <Route path="/delete/:id" element={<TaskDelete />} />
-                  </Routes>
-              </Container>
-          </BrowserRouter>
+    <div className="App">
+        <Container>
+            <NavBar />
+            <Routes>
+                <Route index element={<TaskList />} />
+                <Route path="/create" element={<TaskCreateOrEdit isUpdate={false} />} />
+                <Route path="/update/:id" element={<TaskCreateOrEdit isUpdate={true} />} />
+                <Route path="/delete/:id" element={<TaskDelete />} />
+            </Routes>
+        </Container>
     </div>
   );
 }
